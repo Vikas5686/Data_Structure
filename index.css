@@ -30,11 +30,3 @@ button{
     margin: 3px;
     margin-bottom: 60px;
 }
-.table{
-    width: fit-content;
-    height: fit-content;
-    /* background-color: black; */
-    display: flex;
-    justify-content: center;
-    
-}

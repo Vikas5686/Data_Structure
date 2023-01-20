@@ -1,4 +1,3 @@
-const table = document.querySelector('.table')
 const container = document.querySelector('.container')
 const RandomArrayButton = document.querySelector('.RandomArray')
 
