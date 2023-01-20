@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.NavBar{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(174, 236, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(174, 255, 228);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+button{
+    margin: 5px 10px;
+    padding: 3px;
+}
+.line{
+    width: 10px;
+    /* height: 100px; */
+    background-color: blue ;
+    margin: 3px;
+    margin-bottom: 60px;
+}
+.table{
+    width: fit-content;
+    height: fit-content;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    
+}
