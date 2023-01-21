@@ -8,7 +8,7 @@ let NUM = 10;
 let randomArray = []
 
 //funtions
-function Swaping(){
+function Swaping() {
     randomArray.forEach(i => {
         var line = document.createElement('div')
         line.className = "line"
@@ -20,7 +20,7 @@ function Swaping(){
 function GanrateArray() {
     randomArray = Array.from({
         length: NUM
-    }, () => Math.floor(Math.random() * 100)+10);
+    }, () => Math.floor(Math.random() * 100) + 10);
 
     randomArray.forEach(i => {
         var line = document.createElement('div')
@@ -38,17 +38,32 @@ function RemoveLines() {
 }
 
 function InsertionSort() {
-    for (let i = 1; i <= NUM - 1; i++) {
-        let key = randomArray[i]
-        let j = i - 1
-        while (j >= 0 && randomArray[j] > key) {
-            randomArray[j + 1] = randomArray[j]
-            j--
-        }
-        randomArray[j + 1] = key
+    // for (let i = 1; i <= NUM - 1; i++) {
+    //     let key = randomArray[i]
+    //     let j = i - 1
+    //     while (j >= 0 && randomArray[j] > key) {
+    //             randomArray[j + 1] = randomArray[j]
+    //         j--
+    //         RemoveLines()
+    //         Swaping()
+    //     }
+    //     randomArray[j + 1] = key
+    //     RemoveLines()
+    //     Swaping()
+    // }
+    // RemoveLines()
+    // Swaping()
+
+
+
+    for (let i = 1; i < NUM;
+        setTimeout(() => {
+            i++
+        }, 1000)
+    ) {
+
+        console.log(randomArray);
     }
-    RemoveLines()
-    Swaping()
 }
 
 //EventListener -click
@@ -59,8 +74,6 @@ RandomArrayButton.addEventListener('click', () => {
 
 InsertionSorting.addEventListener('click', () => {
     InsertionSort();
-    console.log(randomArray)
-    
 })
 
 //Onloading
